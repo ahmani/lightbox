@@ -1,0 +1,164 @@
+img {
+    width: 160px;
+    height: 100px;
+}
+.vignette {
+    width: auto;
+    display: inline-block;
+    box-sizing: content-box;
+    border: 2px solid gray;
+    padding: 22px;
+    text-align: center;
+}
+.lightbox
+{
+     width:100%;
+    height: 100%;
+    position: absolute;
+    top:0; left:0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.lightbox  #content {
+    box-sizing: border-box;
+    width: 1910px;
+    position: relative;
+    height: 947px;
+
+}
+.lightbox  #content img {
+    width : 100%;
+    height:100%;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 21px;
+    background-color: rgb(158, 152, 152);
+    margin: 11px 30px 0px 0px;
+    border-radius: 50px;
+    font-size: 18px;
+    z-index: 9999;
+}
+.before {
+    position: absolute;
+    color: #fff;
+    padding: 28px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    font-size: 23px;
+    top: 50%;
+    margin-left: 29px;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    padding: 28px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 24px 30px 0px 0px;
+    border-radius: 25px;
+    font-size: 23px;
+    right: 0;
+}
+#textImg {
+    position: absolute;
+    color: #fff;
+    padding: 28px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 23px;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+}
+
+.full {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 21px;
+    background-color: rgb(158, 152, 152);
+    margin: 11px 96px 0px 0px;
+    border-radius: 50px;
+    font-size: 18px;
+    z-index: 9999;
+}
+
+.addComment {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    padding: 15px;
+    background-color: rgb(158, 152, 152);
+    margin: 12px 0px 0px 28px;
+    border-radius: 44%;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.comments {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(86, 90, 105, 0.5);
+    z-index: 9999;
+    width: 20%;
+    height: 30%;
+    min-height: 199px;
+}
+button.btn {
+    font-family: "Bitter";
+    font-size: 100%;
+    padding: 7px 35px;
+    color: #fff;
+    border: 0 transparent;
+    background-color: #a9a5a5;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 23px;
+}
+.scrollerComments{
+    display: none;
+}
+.shownComments .scrollerComments {
+    display: block;
+    position: absolute;
+    height: 20px;
+    overflow: hidden;
+    background: #F2F2F2;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(86, 90, 105, 0.5);
+    z-index: 9999;
+    width: 100%;
+}
+
+#scroller{
+    height:100%;
+    margin:0;
+    padding:0;
+    line-height:30px;
+    position:relative;
+}
+#scroller li{
+    float:left;
+    height:30px;
+    padding:0 0 0 10px;
+    list-style-position:inside;
+}
