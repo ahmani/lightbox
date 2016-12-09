@@ -95,18 +95,6 @@ jq1.modules.text = (function()
 			        req = elem.requestFullScreen || elem.webkitRequestFullScreen || elem.mozRequestFullScreen;
 			        req.call(elem);
 		},
-		storageAvailable : function(type) {
-			try {
-				var storage = window[type],
-					x = '__storage_test__';
-				storage.setItem(x, x);
-				storage.removeItem(x);
-				return true;
-			}
-			catch(e) {
-				return false;
-			}
-		},
 		init : function()
 		{
 			$('div.vignette img').click(jq1.modules.text.showModal)
@@ -115,7 +103,6 @@ jq1.modules.text = (function()
 			$('.before').click(jq1.modules.text.prevImg)
 			$('.addComment').click(jq1.modules.text.slidecomments)
 			$('.full').click(jq1.modules.text.fullscreen)
-			console.log(jq1.modules.text.storageAvailable('localStorage'))
 		}
 		
 	}
